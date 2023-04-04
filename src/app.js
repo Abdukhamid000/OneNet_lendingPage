@@ -1,5 +1,8 @@
 const nextBtn = document.querySelector(".swiper-button-next");
 const prevBtn = document.querySelector(".swiper-button-prev");
+const mobileToggle = document.querySelector("#mobileToggle");
+const mobileList = document.querySelector("#mobileList");
+const hideList = document.querySelector("#hideList");
 
 let swiper = new Swiper(".swiper", {
   navigation: {
@@ -31,4 +34,12 @@ nextBtn.addEventListener("click", () => {
 
 prevBtn.addEventListener("click", () => {
   swiper.slidePrev();
+});
+
+mobileToggle.addEventListener("click", () => {
+  mobileList.classList.replace("hidden", "block");
+});
+
+hideList.addEventListener("click", () => {
+  mobileList.classList.replace("block", "hidden");
 });

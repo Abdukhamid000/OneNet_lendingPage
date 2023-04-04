@@ -85,13 +85,6 @@
     opacity: 0.9;
   }
 
-  /* .text-sm {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #ffffff;
-  } */
-
   .swiper-button-prev {
     width: 32px !important;
     height: 32px !important;
@@ -157,6 +150,12 @@
   footer {
     border-top: 3px solid rgba(255, 62, 45, 1);
     background: #0a0e15;
+  }
+
+  .footer-bottom {
+    background: rgba(54, 49, 48, 0.54);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
   }
 
   @media (max-width: 500px) {

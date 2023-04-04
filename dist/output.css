@@ -633,13 +633,6 @@ header,
   opacity: 0.9;
 }
 
-/* .text-sm {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #ffffff;
-  } */
-
 .swiper-button-prev {
   width: 32px !important;
   height: 32px !important;
@@ -708,14 +701,37 @@ footer {
   background: #0a0e15;
 }
 
+.footer-bottom {
+  background: rgba(54, 49, 48, 0.54);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
 @media (max-width: 500px) {
   .btn {
     padding: 10px;
   }
 }
 
+.fixed{
+  position: fixed;
+}
+
 .relative{
   position: relative;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.z-10{
+  z-index: 10;
 }
 
 .col-span-5{
@@ -728,6 +744,10 @@ footer {
 
 .col-span-8{
   grid-column: span 8 / span 8;
+}
+
+.row-start-1{
+  grid-row-start: 1;
 }
 
 .mx-auto{
@@ -750,10 +770,6 @@ footer {
 
 .mb-6{
   margin-bottom: 1.5rem;
-}
-
-.ml-8{
-  margin-left: 2rem;
 }
 
 .mt-1{
@@ -780,12 +796,12 @@ footer {
   margin-top: 2rem;
 }
 
-.mt-\[-50px\]{
-  margin-top: -50px;
-}
-
 .mt-\[112px\]{
   margin-top: 112px;
+}
+
+.block{
+  display: block;
 }
 
 .flex{
@@ -798,6 +814,10 @@ footer {
 
 .hidden{
   display: none;
+}
+
+.h-\[100vh\]{
+  height: 100vh;
 }
 
 .h-full{
@@ -820,16 +840,8 @@ footer {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-col{
   flex-direction: column;
-}
-
-.flex-wrap{
-  flex-wrap: wrap;
 }
 
 .items-start{
@@ -860,8 +872,9 @@ footer {
   gap: 1.5rem;
 }
 
-.gap-8{
-  gap: 2rem;
+.gap-x-6{
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
 
 .gap-y-2{
@@ -882,11 +895,6 @@ footer {
 
 .gap-y-\[20px\]{
   row-gap: 20px;
-}
-
-.gap-x-6{
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -979,6 +987,11 @@ footer {
   padding-bottom: 0.75rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -991,6 +1004,10 @@ footer {
 
 .pb-12{
   padding-bottom: 3rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 
 .pt-6{
@@ -1016,6 +1033,10 @@ footer {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-\[20px\]{
+  font-size: 20px;
 }
 
 .text-\[36px\]{
@@ -1093,12 +1114,6 @@ footer {
     line-height: 140%;
   }
 
-  .md\:heading-lg {
-    font-weight: 700;
-    line-height: 140%;
-    font-size: 23px;
-  }
-
   .md\:heading-md {
     font-weight: 600;
     font-size: 24px;
@@ -1124,14 +1139,52 @@ footer {
     display: block;
   }
 
+  .sm\:hidden{
+    display: none;
+  }
+
+  .sm\:h-auto{
+    height: auto;
+  }
+
+  .sm\:w-auto{
+    width: auto;
+  }
+
   .sm\:grid-cols-12{
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .sm\:gap-8{
+    gap: 2rem;
+  }
+
+  .sm\:bg-main{
+    --tw-bg-opacity: 1;
+    background-color: rgb(9 13 20 / var(--tw-bg-opacity));
+  }
+
+  .sm\:p-0{
+    padding: 0px;
+  }
+
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width: 768px){
   .md\:col-span-4{
     grid-column: span 4 / span 4;
+  }
+
+  .md\:row-start-auto{
+    grid-row-start: auto;
+  }
+
+  .md\:mt-\[-50px\]{
+    margin-top: -50px;
   }
 
   .md\:flex{
@@ -1142,21 +1195,16 @@ footer {
     display: grid;
   }
 
+  .md\:hidden{
+    display: none;
+  }
+
   .md\:grid-cols-12{
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:flex-nowrap{
-    flex-wrap: nowrap;
-  }
-
-  .md\:gap-x-6{
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
   }
 
   .md\:text-\[40px\]{
@@ -1184,10 +1232,22 @@ footer {
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1280px){
+  .xl\:static{
+    position: static;
+  }
+
   .xl\:flex{
     display: flex;
+  }
+
+  .xl\:text-\[36px\]{
+    font-size: 36px;
   }
 }

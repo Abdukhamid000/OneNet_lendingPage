@@ -18,11 +18,28 @@
         <a href="#">
           <img src="./images/Logo.svg" alt="" />
         </a>
-        <ul class="gap-8 ml-8 hidden xl:flex text-white-700">
-          <li class="hover:text-normal"><a href="#">О компании</a></li>
-          <li class="hover:text-normal"><a href="#">Тарифы</a></li>
-          <li class="hover:text-normal"><a href="#">Обратная связь</a></li>
-          <li class="hover:text-normal"><a href="#">Новости</a></li>
+        <span id="mobileToggle" class="block md:hidden">
+          <img src="./images/mobileToggle.svg" alt="" />
+        </span>
+        <ul
+          id="mobileList"
+          class="sm:gap-8 xl:flex sm:text-sm text-white-700 xl:static sm:hidden sm:h-auto h-[100vh] sm:bg-main hidden sm:w-auto w-full left-0 fixed bottom-0 text-[20px] z-10 p-4 sm:p-0 bg-dark"
+        >
+          <span id="hideList" class="block sm:hidden">
+            <img src="./images/x.svg" alt="" />
+          </span>
+          <li class="hover:text-normal py-4">
+            <a href="#">О компании</a>
+          </li>
+          <li class="hover:text-normal py-4">
+            <a href="#">Тарифы</a>
+          </li>
+          <li class="hover:text-normal py-4">
+            <a href="#">Обратная связь</a>
+          </li>
+          <li class="hover:text-normal py-4">
+            <a href="#">Новости</a>
+          </li>
         </ul>
 
         <ul class="items-center hidden md:flex space-x-6">
@@ -44,7 +61,7 @@
     </header>
 
     <main>
-      <section id="showcase" class="relative">
+      <section id="showcase" class="relative pb-5">
         <div
           class="container grid md:grid-cols-2 grid-cols-1 justify-center items-center"
         >
@@ -58,7 +75,7 @@
               <a href="#">Подробнее</a>
             </button>
           </div>
-          <div>
+          <div class="row-start-1 md:row-start-auto">
             <img
               src="./images/Uzbekistan-[Converted] 1.png"
               width="100%"
@@ -71,7 +88,7 @@
 
       <section id="popular-rates" class="bg-dark pb-12">
         <div
-          class="lg:max-w-[990px] max-w-[768px] mt-[-50px] lg:mt-[-100px] relative mx-auto"
+          class="lg:max-w-[990px] max-w-[768px] md:mt-[-50px] lg:mt-[-100px] relative mx-auto"
         >
           <div
             class="categories p-4 grid grid-cols-1 lg:grid-cols-3 justify-center gap-6"
@@ -97,7 +114,7 @@
           </div>
         </div>
         <p class="text-sm text-fireColor text-center mt-8">Тарифы</p>
-        <h2 class="heading-lg text-normal text-center mb-14">
+        <h2 class="heading-lg xl:text-[36px] text-normal text-center mb-14">
           Популярные тарифы
         </h2>
         <div class="container grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -223,31 +240,39 @@
           </div>
         </div>
         <div
-          class="container flex flex-wrap md:flex-nowrap items-center justify-center gap-6 mt-[112px]"
+          class="container grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center gap-6 mt-[112px]"
         >
           <div
             class="flex flex-col justify-center items-center p-5 prirority bg-main gap-y-6"
           >
             <img src="./images/Thuder.svg" alt="" />
-            <h4 class="md:heading-lg text-normal">Скоростное соединение</h4>
+            <h4 class="heading-lg text-[20px] text-normal">
+              Скоростное соединение
+            </h4>
           </div>
           <div
             class="flex flex-col justify-center items-center p-5 prirority gap-y-6 prirority bg-main"
           >
             <img src="./images/Thuder.svg" alt="" />
-            <h4 class="md:heading-lg text-normal">Выгодные предложения</h4>
+            <h4 class="heading-lg text-[20px] text-normal">
+              Скоростное соединение
+            </h4>
           </div>
           <div
             class="flex flex-col justify-center items-center p-5 prirority gap-y-6 prirority bg-main"
           >
             <img src="./images/Thuder.svg" alt="" />
-            <h4 class="md:heading-lg text-normal">Выгодные предложения</h4>
+            <h4 class="heading-lg text-[20px] text-normal">
+              Скоростное соединение
+            </h4>
           </div>
           <div
             class="flex flex-col justify-center items-center p-5 prirority gap-y-6 bg-main"
           >
             <img src="./images/Thuder.svg" alt="" />
-            <h4 class="md:heading-lg text-normal">Поддержка 24/7</h4>
+            <h4 class="heading-lg text-[20px] text-normal">
+              Скоростное соединение
+            </h4>
           </div>
         </div>
       </section>
@@ -450,9 +475,7 @@
 
       <footer class="pt-9 bg-main">
         <div class="container">
-          <div
-            class="footer-bottom flex flex-col justify-center items-center gap-y-6"
-          >
+          <div class="flex flex-col justify-center items-center gap-y-6">
             <img src="./images/Logo.svg" alt="" />
             <div>
               <p class="text-white-800 text-center">
@@ -465,6 +488,15 @@
                 (трансиверов) и микроконтроллеров самых разных производителей.
               </p>
             </div>
+          </div>
+        </div>
+        <div class="footer-bottom py-4 mt-10">
+          <div class="container flex justify-between items-center text-normal">
+            <h6>© One Net LLC. All rights reserved.</h6>
+            <div>
+              <img src="./images/UicGroup.svg" alt="" width="40px" />
+            </div>
+            <p>Правила пользования</p>
           </div>
         </div>
       </footer>
