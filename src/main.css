@@ -158,4 +158,10 @@
     border-top: 3px solid rgba(255, 62, 45, 1);
     background: #0a0e15;
   }
+
+  @media (max-width: 500px) {
+    .btn {
+      padding: 10px;
+    }
+  }
 }
