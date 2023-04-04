@@ -3,8 +3,18 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     colors: {
-      white: "#fff",
-      white60: "rgba(255, 255, 255, 0.6)",
+      white: {
+        100: "rgba(255, 255, 255, 0.1)",
+        200: "rgba(255, 255, 255, 0.2)",
+        300: "rgba(255, 255, 255, 0.3)",
+        400: "rgba(255, 255, 255, 0.4)",
+        500: "rgba(255, 255, 255, 0.5)",
+        600: "rgba(255, 255, 255, 0.6)",
+        700: "rgba(255, 255, 255, 0.7)",
+        800: "rgba(255, 255, 255, 0.8)",
+        900: "rgba(255, 255, 255, 0.9)",
+      },
+      normal: "#fff",
       fireColor: "#FF3E2D",
       dark: "#0F131A",
       main: "#090D14",
@@ -27,7 +37,10 @@ module.exports = {
     },
 
     extend: {
-      backgroundImage: {},
+      backgroundImage: {
+        leftArrow: "url('/src/images/ArrowLeft.svg')",
+        rightArrow: "url('/src/images/ArrowRight.svg')",
+      },
     },
   },
   plugins: [],

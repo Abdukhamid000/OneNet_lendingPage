@@ -5,28 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@9/swiper-bundle.min.css"
+    />
     <title>OneNet</title>
   </head>
   <body>
-    <header class="py-6 text-white">
-      <div class="container flex items-center">
+    <header class="py-6 text-normal">
+      <div class="container flex justify-between items-center">
         <a href="#">
           <img src="./images/Logo.svg" alt="" />
         </a>
-        <ul class="flex gap-8 ml-8 text-white">
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Тарифы</a></li>
-          <li><a href="#">Обратная связь</a></li>
-          <li><a href="#">Новости</a></li>
+        <ul class="flex gap-8 ml-8 text-white-700">
+          <li class="hover:text-normal"><a href="#">О компании</a></li>
+          <li class="hover:text-normal"><a href="#">Тарифы</a></li>
+          <li class="hover:text-normal"><a href="#">Обратная связь</a></li>
+          <li class="hover:text-normal"><a href="#">Новости</a></li>
         </ul>
 
-        <ul class="flex ml-14">
+        <ul class="flex items-center space-x-6">
           <li>+998 71 234 56 78</li>
-          <button></button>
-          <button>
+          <button class="btn bg-white-100 py-3 px-[14px]">
+            <div class="flex justify-center items-center space-x-2">
+              <img src="./images/Earth.svg" alt="" />
+              <span>Ру</span>
+            </div>
+          </button>
+          <button class="btn px-8">
             <a href="#">Личный кабинет</a>
           </button>
-          <button></button>
+          <button class="btn bg-[#4318BE] p-[6px]">
+            <img src="./images/Human.svg" alt="" />
+          </button>
         </ul>
       </div>
     </header>
@@ -35,11 +48,11 @@
       <section id="showcase" class="relative">
         <div class="container grid grid-cols-2 justify-center items-center">
           <div>
-            <h1 class="text-white heading-xl">
+            <h1 class="text-normal heading-xl">
               <span class="text-fireColor"> Доступные тарифы </span> от
               Доступного интернета!
             </h1>
-            <p class="text-sm mt-5 mb-6">О компании</p>
+            <p class="text-sm text-normal mt-5 mb-6">О компании</p>
             <button class="btn">
               <a href="#">Подробнее</a>
             </button>
@@ -59,64 +72,64 @@
         <div class="max-w-[990px] mt-[-100px] relative mx-auto">
           <div class="categories p-4 grid grid-cols-3 justify-center gap-6">
             <div
-              class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-4 hover:bg-main"
+              class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-4"
             >
               <img src="./images/Cloud.svg" alt="" />
-              <h3 class="heading-lg text-white">Облачные услуги</h3>
+              <h3 class="heading-lg text-normal">Облачные услуги</h3>
             </div>
             <div
-              class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-5 hover:bg-main"
+              class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-5"
             >
               <img src="./images/Cloud.svg" alt="" />
-              <h3 class="heading-lg text-white">Интернет</h3>
+              <h3 class="heading-lg text-normal">Интернет</h3>
             </div>
             <div
-              class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-4 hover:bg-main"
+              class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-4"
             >
               <img src="./images/Cloud.svg" alt="" />
-              <h3 class="heading-lg text-white">Телекоммуникация</h3>
+              <h3 class="heading-lg text-normal">Телекоммуникация</h3>
             </div>
           </div>
         </div>
         <p class="text-sm text-fireColor text-center mt-8">Тарифы</p>
-        <h2 class="heading-lg text-white text-center mb-14">
+        <h2 class="heading-lg text-normal text-center mb-14">
           Популярные тарифы
         </h2>
         <div class="container grid grid-cols-3 gap-6">
           <div class="bg-main p-5 price">
             <p class="text-fireColor text-sm mb-2">Премиум</p>
-            <span class="text-white"> 149 900 <sub>сум / месяц</sub> </span>
+            <span class="text-normal"> 149 900 <sub>сум / месяц</sub> </span>
             <h5 class="heading-md text-fireColor py-6">Business Royal</h5>
             <hr class="bg-white" />
             <div class="flex items-start gap-3 pt-6">
               <img src="./images/Checked.svg" alt="" />
               <div>
-                <p class="text-sm text-white60">Включенный режим</p>
-                <h5 class="heading-md text-white60 mt-1">Безлимит</h5>
+                <p class="text-sm text-white-600">Включенный режим</p>
+                <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
             <div class="flex items-start gap-3 pt-6">
               <img src="./images/Checked.svg" alt="" />
               <div>
-                <p class="tect-sm text-white60">Включенный режим</p>
-                <h5 class="heading-md text-white60 mt-1">Безлимит</h5>
+                <p class="tect-sm text-white-600">Включенный режим</p>
+                <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
             <div class="flex items-start gap-3 pt-6">
               <img src="./images/Checked.svg" alt="" />
               <div>
-                <p class="text-sm text-white60">Включенный режим</p>
-                <h5 class="heading-md text-white60 mt-1">Безлимит</h5>
+                <p class="text-sm text-white-600">Включенный режим</p>
+                <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
             <div class="flex items-start gap-3 pt-6">
               <img src="./images/Checked.svg" alt="" />
               <div>
-                <p class="tect-sm text-white60">Включенный режим</p>
-                <h5 class="heading-md text-white60 mt-1">Безлимит</h5>
+                <p class="tect-sm text-white-600">Включенный режим</p>
+                <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
-            <button class="btn bg-silver w-full mt-8 text-white">
+            <button class="btn bg-silver w-full mt-8 text-normal">
               <a href="#">Начать</a>
             </button>
           </div>
@@ -128,41 +141,41 @@
             class="flex flex-col justify-center items-center p-5 prirority bg-main gap-y-6"
           >
             <img src="./images/Thuder.svg" alt="" />
-            <h4 class="heading-lg text-white">Скоростное соединение</h4>
+            <h4 class="heading-lg text-normal">Скоростное соединение</h4>
           </div>
           <div
             class="flex flex-col justify-center items-center p-5 prirority gap-y-6"
           >
             <img src="./images/Thuder.svg" alt="" />
-            <h4 class="heading-lg text-white">Выгодные предложения</h4>
+            <h4 class="heading-lg text-normal">Выгодные предложения</h4>
           </div>
           <div
             class="flex flex-col justify-center items-center p-5 prirority gap-y-6"
           >
             <img src="./images/Thuder.svg" alt="" />
-            <h4 class="heading-lg text-white">Выгодные предложения</h4>
+            <h4 class="heading-lg text-normal">Выгодные предложения</h4>
           </div>
           <div
             class="flex flex-col justify-center items-center p-5 prirority gap-y-6"
           >
             <img src="./images/Thuder.svg" alt="" />
-            <h4 class="heading-lg text-white">Поддержка 24/7</h4>
+            <h4 class="heading-lg text-normal">Поддержка 24/7</h4>
           </div>
         </div>
       </section>
 
       <section id="contact" class="bg-main py-16">
         <div class="container">
-          <h2 class="heading2 text-white">Оставить заявку</h2>
+          <h2 class="heading2 text-normal">Оставить заявку</h2>
           <div class="grid grid-cols-12 gap-6 mt-10">
             <div class="col-span-4">
               <div class="flex flex-col w-full">
                 <div class="flex flex-col gap-y-5 text-md">
-                  <label class="flex flex-col text-white gap-y-2">
+                  <label class="flex flex-col text-normal gap-y-2">
                     Имя
                     <input type="text" placeholder="Введите свое имя" />
                   </label>
-                  <label class="flex flex-col text-white gap-y-2">
+                  <label class="flex flex-col text-normal gap-y-2">
                     Номер телефона
                     <input type="text" placeholder="Введите свое имя" />
                   </label>
@@ -172,7 +185,7 @@
             </div>
 
             <div class="col-span-8 text-md">
-              <label class="flex flex-col text-white gap-y-2">
+              <label class="flex flex-col text-normal gap-y-2">
                 Введите текст
                 <textarea
                   rows="5"
@@ -180,12 +193,195 @@
                 ></textarea>
               </label>
               <div class="text-right">
-                <button class="btn text-white mt-6">Отправить заявку</button>
+                <button class="btn text-normal mt-6">Отправить заявку</button>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="news" class="py-16 bg-dark text-normal">
+        <div class="container">
+          <div class="flex items-center justify-between mb-6">
+            <h1 class="heading-xl text-[40px]">Новости и оповещания</h1>
+            <p>Все новости</p>
+          </div>
+          <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-7">
+              <div class="relative">
+                <img
+                  src="./images/image 31.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                  class="rounded-2xl"
+                />
+                <div
+                  class="imageBack rounded-2xl text-normal flex flex-col justify-end w-full h-full p-6"
+                >
+                  <h2 class="leading-[130%] font-bold heading-md">
+                    Мирзиёев подписал указ о мерах по повышению благосостояния
+                    населения Каракалпакстана
+                  </h2>
+                  <p
+                    class="mt-2 text-white-800 text-sm leading-[130%] font-medium"
+                  >
+                    Президент подписал указ «О дополнительных мерах по повышению
+                    благосостояния населения Республики Каракалпакстан путем
+                    ускоренного развития предпринимательства, инновации
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-5">
+              <div class="grid grid-cols-12 gap-x-6 gap-y-[20px]">
+                <div class="col-span-5">
+                  <div>
+                    <img
+                      src="./images/Frame 427318229.png"
+                      width="100%"
+                      height="140px"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-span-7">
+                  <div class="flex flex-col justify-center">
+                    <span
+                      class="font-medium text-sm leading-[130%] text-white-600"
+                      >Сентябрь 6, 2022</span
+                    >
+                    <h6 class="my-2 font-semibold text-lg leading-[130%]">
+                      50% стоимости страхования урожая будет покрывать госуд...
+                    </h6>
+                    <p
+                      class="text-left text-sm font-semibold leading-[150%] text-white-400"
+                    >
+                      Во время видеоселекторного совещания у президента,
+                      состоявш...
+                    </p>
+                  </div>
+                </div>
+                <div class="col-span-5">
+                  <div>
+                    <img
+                      src="./images/Frame 427318229.png"
+                      width="100%"
+                      height="140px"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-span-7">
+                  <div class="flex flex-col justify-center">
+                    <span
+                      class="font-medium text-sm leading-[130%] text-white-600"
+                      >Сентябрь 6, 2022</span
+                    >
+                    <h6 class="my-2 font-semibold text-lg leading-[130%]">
+                      50% стоимости страхования урожая будет покрывать госуд...
+                    </h6>
+                    <p
+                      class="text-left text-sm font-semibold leading-[150%] text-white-400"
+                    >
+                      Во время видеоселекторного совещания у президента,
+                      состоявш...
+                    </p>
+                  </div>
+                </div>
+                <div class="col-span-5">
+                  <div>
+                    <img
+                      src="./images/Frame 427318229.png"
+                      width="100%"
+                      height="140px"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-span-7">
+                  <div class="flex flex-col justify-center">
+                    <span
+                      class="font-medium text-sm leading-[130%] text-white-600"
+                      >Сентябрь 6, 2022</span
+                    >
+                    <h6 class="my-2 font-semibold text-lg leading-[130%]">
+                      50% стоимости страхования урожая будет покрывать госуд...
+                    </h6>
+                    <p
+                      class="text-left text-sm font-semibold leading-[150%] text-white-400"
+                    >
+                      Во время видеоселекторного совещания у президента,
+                      состоявш...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" class="py-12 bg-main">
+        <div class="container">
+          <div class="flex justify-between swiper-wrapper">
+            <h1 class="text-normal heading-xl">Партнёры</h1>
+            <div class="w-[72px] flex justify-between items-center">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next bg-no-repeat"></div>
+            </div>
+          </div>
+
+          <div class="swiper mt-6">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper text-normal">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./images/UicGroup.svg" alt="" />
+              </div>
+              <div class="swiper-slide partners">
+                <img src="./images/UicGroup.svg" alt="" />
+              </div>
+              <div class="swiper-slide partners">
+                <img src="./images/UicGroup.svg" alt="" />
+              </div>
+              <div class="swiper-slide partners">
+                <img src="./images/UicGroup.svg" alt="" />
+              </div>
+              <div class="swiper-slide partners">
+                <img src="./images/UicGroup.svg" alt="" />
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+          </div>
+        </div>
+      </section>
+
+      <section id="questions" class="bg-main"></section>
+
+      <footer class="pt-9 bg-main">
+        <div class="container">
+          <div
+            class="footer-bottom flex flex-col justify-center items-center gap-y-6"
+          >
+            <img src="./images/Logo.svg" alt="" />
+            <div>
+              <p class="text-white-800 text-center">
+                Первый открытый протокол беспроводной сети передачи данных,
+                разработанный для целей <br />
+                автоматизации зданий и управления распределёнными объектами.
+                <br />
+                One-Net может быть использован со множеством существующих
+                приёмопередатчиков <br />
+                (трансиверов) и микроконтроллеров самых разных производителей.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
+
+    <script src="./app.js"></script>
   </body>
 </html>
