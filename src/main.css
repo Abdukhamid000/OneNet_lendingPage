@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+  header,
+  #showcase {
+    @apply bg-main;
+  }
+
+  .heading-xl,
+  .heading-lg,
+  .heading2 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 140%;
+  }
+
+  .heading-lg {
+    font-size: 23px;
+  }
+
+  .heading2 {
+    font-size: 36px;
+  }
+
+  .heading-md {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .price {
+    border: 1px solid #31343a;
+    border-radius: 16px;
+  }
+
+  .categories {
+    background: #161a1f;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0px 8px 24px rgba(5, 7, 11, 0.6);
+    border-radius: 16px;
+  }
+
+  .prirority {
+    border-radius: 10px;
+  }
+
+  .categories > div {
+    background: #0f1319;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn {
+    @apply bg-fireColor;
+    padding: 10px 92px;
+    border-radius: 10px;
+  }
+
+  .text-sm {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+
+  .text-md {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .btn a {
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  input,
+  textarea {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    outline: none;
+    padding: 13px 16px;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
