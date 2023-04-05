@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
+    ></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@9/swiper-bundle.min.css"
@@ -471,7 +475,333 @@
         </div>
       </section>
 
-      <section id="questions" class="bg-main"></section>
+      <section class="py-16 bg-blue-50 bg-main text-normal">
+        <div class="container">
+          <main class="p-5 bg-light-blue">
+            <h2 class="text-4xl font-semibold text-vnet-blue mb-2">
+              Часто задаваемые вопросы
+            </h2>
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-x-6 my-2">
+              <div class="my-1">
+                <ul class="flex flex-col mt-8 w-full">
+                  <li
+                    class="bg-white my-2 shadow-lg bg-white-100 rounded-md"
+                    x-data="accordion(1)"
+                  >
+                    <h2
+                      @click="handleClick()"
+                      class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                    >
+                      <span>When will my order arrive?</span>
+
+                      <svg
+                        :class="handleRotate()"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 14L17 10"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </h2>
+                    <div
+                      x-ref="tab"
+                      :style="handleToggle()"
+                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                    >
+                      <p class="p-3 text-gray-900">
+                        Shipping time is set by our delivery partners, according
+                        to the delivery method chosen by you. Additional details
+                        can be found in the order confirmation
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="bg-white my-2 shadow-lg bg-white-100 rounded-md"
+                    x-data="accordion(2)"
+                  >
+                    <h2
+                      @click="handleClick()"
+                      class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                    >
+                      <span>How do I track my order?</span>
+                      <svg
+                        :class="handleRotate()"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 14L17 10"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </h2>
+                    <div
+                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      x-ref="tab"
+                      :style="handleToggle()"
+                    >
+                      <p class="p-3 text-gray-900">
+                        Once shipped, you’ll get a confirmation email that
+                        includes a tracking number and additional information
+                        regarding tracking your order.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="bg-white my-2 shadow-lg bg-white-100 rounded-md"
+                    x-data="accordion(3)"
+                  >
+                    <h2
+                      @click="handleClick()"
+                      class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                    >
+                      <span>What’s your return policy?</span>
+                      <svg
+                        :class="handleRotate()"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 14L17 10"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </h2>
+                    <div
+                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      x-ref="tab"
+                      :style="handleToggle()"
+                    >
+                      <p class="p-3 text-gray-900">
+                        We allow the return of all items within 30 days of your
+                        original order’s date. If you’re interested in returning
+                        your items, send us an email with your order number and
+                        we’ll ship a return label.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="bg-white my-2 shadow-lg bg-white-100 rounded-md"
+                    x-data="accordion(4)"
+                  >
+                    <h2
+                      @click="handleClick()"
+                      class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                    >
+                      <span>How do I make changes to an existing order?</span>
+                      <svg
+                        :class="handleRotate()"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 14L17 10"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </h2>
+                    <div
+                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      x-ref="tab"
+                      :style="handleToggle()"
+                    >
+                      <p class="p-3 text-gray-900">
+                        Changes to an existing order can be made as long as the
+                        order is still in “processing” status. Please contact
+                        our team via email and we’ll make sure to apply the
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="my-1">
+                <ul class="flex flex-col mt-8 w-full">
+                  <li
+                    class="bg-white my-2 shadow-lg bg-white-100 rounded-md"
+                    x-data="accordion(5)"
+                  >
+                    <h2
+                      @click="handleClick()"
+                      class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                    >
+                      <span>When will my order arrive?</span>
+
+                      <svg
+                        :class="handleRotate()"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 14L17 10"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </h2>
+                    <div
+                      x-ref="tab"
+                      :style="handleToggle()"
+                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                    >
+                      <p class="p-3 text-gray-900">
+                        Shipping time is set by our delivery partners, according
+                        to the delivery method chosen by you. Additional details
+                        can be found in the order confirmation
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="bg-white my-2 shadow-lg bg-white-100 rounded-md"
+                    x-data="accordion(6)"
+                  >
+                    <h2
+                      @click="handleClick()"
+                      class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                    >
+                      <span>How do I track my order?</span>
+                      <svg
+                        :class="handleRotate()"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 14L17 10"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </h2>
+                    <div
+                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      x-ref="tab"
+                      :style="handleToggle()"
+                    >
+                      <p class="p-3 text-gray-900">
+                        Once shipped, you’ll get a confirmation email that
+                        includes a tracking number and additional information
+                        regarding tracking your order.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="bg-white my-2 shadow-lg bg-white-100 rounded-md"
+                    x-data="accordion(7)"
+                  >
+                    <h2
+                      @click="handleClick()"
+                      class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                    >
+                      <span>What’s your return policy?</span>
+                      <svg
+                        :class="handleRotate()"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 14L17 10"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </h2>
+                    <div
+                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      x-ref="tab"
+                      :style="handleToggle()"
+                    >
+                      <p class="p-3 text-gray-900">
+                        We allow the return of all items within 30 days of your
+                        original order’s date. If you’re interested in returning
+                        your items, send us an email with your order number and
+                        we’ll ship a return label.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="bg-white my-2 shadow-lg bg-white-100 rounded-md"
+                    x-data="accordion(8)"
+                  >
+                    <h2
+                      @click="handleClick()"
+                      class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                    >
+                      <span>How do I make changes to an existing order?</span>
+                      <svg
+                        :class="handleRotate()"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 14L17 10"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </h2>
+                    <div
+                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      x-ref="tab"
+                      :style="handleToggle()"
+                    >
+                      <p class="p-3 text-gray-900">
+                        Changes to an existing order can be made as long as the
+                        order is still in “processing” status. Please contact
+                        our team via email and we’ll make sure to apply the
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </main>
+        </div>
+      </section>
 
       <footer class="pt-9 bg-main">
         <div class="container">
@@ -501,6 +831,33 @@
         </div>
       </footer>
     </main>
+
+    <script>
+      document.addEventListener("alpine:init", () => {
+        Alpine.store("accordion", {
+          tab: 0,
+        });
+
+        Alpine.data("accordion", (idx) => ({
+          init() {
+            this.idx = idx;
+          },
+          idx: -1,
+          handleClick() {
+            this.$store.accordion.tab =
+              this.$store.accordion.tab === this.idx ? 0 : this.idx;
+          },
+          handleRotate() {
+            return this.$store.accordion.tab === this.idx ? "rotate-180" : "";
+          },
+          handleToggle() {
+            return this.$store.accordion.tab === this.idx
+              ? `max-height: ${this.$refs.tab.scrollHeight}px`
+              : "";
+          },
+        }));
+      });
+    </script>
 
     <script src="./app.js"></script>
   </body>
