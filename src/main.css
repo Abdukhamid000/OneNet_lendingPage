@@ -76,7 +76,8 @@
   }
 
   .btn {
-    @apply bg-fireColor;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      #ff3e2d;
     padding: 10px 92px;
     border-radius: 10px;
   }

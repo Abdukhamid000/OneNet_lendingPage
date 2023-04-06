@@ -20,37 +20,37 @@
     <header class="py-6 text-normal">
       <div class="container flex justify-between items-center">
         <a href="#">
-          <img src="./images/Logo.svg" alt="" />
+          <img src="./images/Logo.svg" alt="image" />
         </a>
-        <span id="mobileToggle" class="block md:hidden">
-          <img src="./images/mobileToggle.svg" alt="" />
+        <span id="mobileToggle" class="block md:hidden cursor-pointer">
+          <img src="./images/mobileToggle.svg" alt="image" />
         </span>
         <ul
           id="mobileList"
-          class="sm:gap-8 xl:flex sm:text-sm text-white-700 xl:static sm:hidden sm:h-auto h-[100vh] sm:bg-main hidden sm:w-auto w-full left-0 fixed bottom-0 text-[20px] z-10 p-4 sm:p-0 bg-dark"
+          class="sm:gap-8 xl:flex sm:text-sm text-white-700 transition xl:static sm:hidden sm:h-auto h-[100vh] sm:bg-main hidden sm:w-auto w-full left-0 fixed bottom-0 text-[20px] z-10 p-4 sm:p-0 bg-dark"
         >
-          <span id="hideList" class="block sm:hidden">
-            <img src="./images/x.svg" alt="" />
+          <span id="hideList" class="block sm:hidden cursor-pointer">
+            <img src="./images/x.svg" alt="image" />
           </span>
-          <li class="hover:text-normal py-4">
+          <li class="hover:text-normal transition duration-300 py-4">
             <a href="#">О компании</a>
           </li>
-          <li class="hover:text-normal py-4">
+          <li class="hover:text-normal py-4 transition duration-300">
             <a href="#">Тарифы</a>
           </li>
-          <li class="hover:text-normal py-4">
+          <li class="hover:text-normal py-4 transition duration-300">
             <a href="#">Обратная связь</a>
           </li>
-          <li class="hover:text-normal py-4">
+          <li class="hover:text-normal py-4 transition duration-300">
             <a href="#">Новости</a>
           </li>
         </ul>
 
         <ul class="items-center hidden md:flex space-x-6">
-          <li>+998 71 234 56 78</li>
+          <li><a href="tel: +998 71 234 56 78">+998 71 234 56 78</a></li>
           <button class="btn bg-white-100 py-3 px-[14px]">
             <div class="flex justify-center items-center space-x-2">
-              <img src="./images/Earth.svg" alt="" />
+              <img src="./images/Earth.svg" alt="image" />
               <span>Ру</span>
             </div>
           </button>
@@ -58,7 +58,7 @@
             <a href="#">Личный кабинет</a>
           </button>
           <button class="btn bg-[#4318BE] p-[6px]">
-            <img src="./images/Human.svg" alt="" />
+            <img src="./images/Human.svg" alt="image" />
           </button>
         </ul>
       </div>
@@ -84,7 +84,7 @@
               src="./images/Uzbekistan-[Converted] 1.png"
               width="100%"
               height="100%"
-              alt=""
+              alt="image"
             />
           </div>
         </div>
@@ -100,19 +100,19 @@
             <div
               class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-4"
             >
-              <img src="./images/Cloud.svg" alt="" />
+              <img src="./images/Cloud.svg" alt="image" />
               <h3 class="heading-lg text-normal">Облачные услуги</h3>
             </div>
             <div
               class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-5"
             >
-              <img src="./images/Cloud.svg" alt="" />
+              <img src="./images/Cloud.svg" alt="image" />
               <h3 class="heading-lg text-normal">Интернет</h3>
             </div>
             <div
               class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-4"
             >
-              <img src="./images/Cloud.svg" alt="" />
+              <img src="./images/Cloud.svg" alt="image" />
               <h3 class="heading-lg text-normal">Телекоммуникация</h3>
             </div>
           </div>
@@ -122,7 +122,9 @@
           Популярные тарифы
         </h2>
         <div class="container grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-main p-5 price">
+          <div
+            class="bg-main p-5 price cursor-pointer transition duration-300 hover:bg-white-100"
+          >
             <p class="text-fireColor text-sm mb-2">Премиум</p>
             <span class="text-normal font-extrabold text-[36px]">
               149 900
@@ -131,28 +133,28 @@
             <h5 class="heading-md text-fireColor py-6">Business Royal</h5>
             <hr class="bg-white" />
             <div class="flex items-start gap-3 pt-6">
-              <img src="./images/Checked.svg" alt="" />
+              <img src="./images/Checked.svg" alt="image" />
               <div>
                 <p class="text-sm leading-6 text-white-600">Включенный режим</p>
                 <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
             <div class="flex items-start gap-3 pt-6">
-              <img src="./images/Checked.svg" alt="" />
+              <img src="./images/Checked.svg" alt="image" />
               <div>
                 <p class="tect-sm leading-6 text-white-600">Интернет</p>
                 <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
             <div class="flex items-start gap-3 pt-6">
-              <img src="./images/Checked.svg" alt="" />
+              <img src="./images/Checked.svg" alt="image" />
               <div>
                 <p class="text-sm leading-6 text-white-600">Минуты</p>
                 <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
             <div class="flex items-start gap-3 pt-6">
-              <img src="./images/Checked.svg" alt="" />
+              <img src="./images/Checked.svg" alt="image" />
               <div>
                 <p class="tect-sm leading-6 text-white-600">СМС</p>
                 <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
@@ -171,28 +173,28 @@
             <h5 class="heading-md text-fireColor py-6">Business Royal</h5>
             <hr class="bg-white" />
             <div class="flex items-start gap-3 pt-6">
-              <img src="./images/Checked.svg" alt="" />
+              <img src="./images/Checked.svg" alt="image" />
               <div>
                 <p class="text-sm leading-6 text-white-600">Включенный режим</p>
                 <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
             <div class="flex items-start gap-3 pt-6">
-              <img src="./images/Checked.svg" alt="" />
+              <img src="./images/Checked.svg" alt="image" />
               <div>
                 <p class="tect-sm leading-6 text-white-600">Интернет</p>
                 <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
             <div class="flex items-start gap-3 pt-6">
-              <img src="./images/Checked.svg" alt="" />
+              <img src="./images/Checked.svg" alt="image" />
               <div>
                 <p class="text-sm leading-6 text-white-600">Минуты</p>
                 <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
             <div class="flex items-start gap-3 pt-6">
-              <img src="./images/Checked.svg" alt="" />
+              <img src="./images/Checked.svg" alt="image" />
               <div>
                 <p class="tect-sm leading-6 text-white-600">СМС</p>
                 <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
@@ -211,28 +213,28 @@
             <h5 class="heading-md text-fireColor py-6">Business Royal</h5>
             <hr class="bg-white" />
             <div class="flex items-start gap-3 pt-6">
-              <img src="./images/Checked.svg" alt="" />
+              <img src="./images/Checked.svg" alt="image" />
               <div>
                 <p class="text-sm leading-6 text-white-600">Включенный режим</p>
                 <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
             <div class="flex items-start gap-3 pt-6">
-              <img src="./images/Checked.svg" alt="" />
+              <img src="./images/Checked.svg" alt="image" />
               <div>
                 <p class="tect-sm leading-6 text-white-600">Интернет</p>
                 <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
             <div class="flex items-start gap-3 pt-6">
-              <img src="./images/Checked.svg" alt="" />
+              <img src="./images/Checked.svg" alt="image" />
               <div>
                 <p class="text-sm leading-6 text-white-600">Минуты</p>
                 <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
               </div>
             </div>
             <div class="flex items-start gap-3 pt-6">
-              <img src="./images/Checked.svg" alt="" />
+              <img src="./images/Checked.svg" alt="image" />
               <div>
                 <p class="tect-sm leading-6 text-white-600">СМС</p>
                 <h5 class="heading-md text-white-600 mt-1">Безлимит</h5>
@@ -249,7 +251,7 @@
           <div
             class="flex flex-col justify-center items-center p-5 prirority bg-main gap-y-6"
           >
-            <img src="./images/Thuder.svg" alt="" />
+            <img src="./images/Thuder.svg" alt="image" />
             <h4 class="heading-lg text-[20px] text-normal">
               Скоростное соединение
             </h4>
@@ -257,7 +259,7 @@
           <div
             class="flex flex-col justify-center items-center p-5 prirority gap-y-6 prirority bg-main"
           >
-            <img src="./images/Thuder.svg" alt="" />
+            <img src="./images/Thuder.svg" alt="image" />
             <h4 class="heading-lg text-[20px] text-normal">
               Скоростное соединение
             </h4>
@@ -265,7 +267,7 @@
           <div
             class="flex flex-col justify-center items-center p-5 prirority gap-y-6 prirority bg-main"
           >
-            <img src="./images/Thuder.svg" alt="" />
+            <img src="./images/Thuder.svg" alt="image" />
             <h4 class="heading-lg text-[20px] text-normal">
               Скоростное соединение
             </h4>
@@ -273,7 +275,7 @@
           <div
             class="flex flex-col justify-center items-center p-5 prirority gap-y-6 bg-main"
           >
-            <img src="./images/Thuder.svg" alt="" />
+            <img src="./images/Thuder.svg" alt="image" />
             <h4 class="heading-lg text-[20px] text-normal">
               Скоростное соединение
             </h4>
@@ -321,20 +323,24 @@
         <div class="container">
           <div class="flex items-center justify-between mb-6">
             <h1 class="md:heading-xl md:text-[40px]">Новости и оповещания</h1>
-            <p>Все новости</p>
+            <p
+              class="transition hover:translate-x-2 hover:text-fireColor cursor-pointer"
+            >
+              Все новости
+            </p>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
             <div class="col-span-7">
               <div class="relative">
                 <img
                   src="./images/image 31.png"
-                  alt=""
+                  alt="image"
                   width="100%"
                   height="100%"
                   class="rounded-2xl"
                 />
                 <div
-                  class="imageBack rounded-2xl text-normal flex flex-col justify-end w-full h-full p-6"
+                  class="imageBack rounded-2xl hover:opacity-90 transition cursor-pointer hover:text-fireColor text-normal flex flex-col justify-end w-full h-full p-6"
                 >
                   <h2 class="leading-[130%] font-bold md:heading-md">
                     Мирзиёев подписал указ о мерах по повышению благосостояния
@@ -358,11 +364,13 @@
                       src="./images/Frame 427318229.png"
                       width="100%"
                       height="140px"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                 </div>
-                <div class="col-span-7">
+                <div
+                  class="col-span-7 cursor-pointer transition hover:text-fireColor"
+                >
                   <div class="flex flex-col justify-center">
                     <span
                       class="font-medium text-sm leading-[130%] text-white-600"
@@ -385,11 +393,13 @@
                       src="./images/Frame 427318229.png"
                       width="100%"
                       height="140px"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                 </div>
-                <div class="col-span-7">
+                <div
+                  class="col-span-7 cursor-pointer transition hover:text-fireColor"
+                >
                   <div class="flex flex-col justify-center">
                     <span
                       class="font-medium text-sm leading-[130%] text-white-600"
@@ -412,11 +422,13 @@
                       src="./images/Frame 427318229.png"
                       width="100%"
                       height="140px"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                 </div>
-                <div class="col-span-7">
+                <div
+                  class="col-span-7 cursor-pointer transition hover:text-fireColor"
+                >
                   <div class="flex flex-col justify-center">
                     <span
                       class="font-medium text-sm leading-[130%] text-white-600"
@@ -453,20 +465,20 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper text-normal">
               <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="./images/UicGroup.svg" alt="" />
+              <div class="swiper-slide cursor-pointer p-3">
+                <img src="./images/UicGroup.svg" alt="image" />
               </div>
-              <div class="swiper-slide partners">
-                <img src="./images/UicGroup.svg" alt="" />
+              <div class="swiper-slide partners cursor-pointer p-3">
+                <img src="./images/UicGroup.svg" alt="image" />
               </div>
-              <div class="swiper-slide partners">
-                <img src="./images/UicGroup.svg" alt="" />
+              <div class="swiper-slide partners cursor-pointer p-3">
+                <img src="./images/UicGroup.svg" alt="image" />
               </div>
-              <div class="swiper-slide partners">
-                <img src="./images/UicGroup.svg" alt="" />
+              <div class="swiper-slide partners cursor-pointer p-3">
+                <img src="./images/UicGroup.svg" alt="image" />
               </div>
-              <div class="swiper-slide partners">
-                <img src="./images/UicGroup.svg" alt="" />
+              <div class="swiper-slide partners cursor-pointer p-3">
+                <img src="./images/UicGroup.svg" alt="image" />
               </div>
             </div>
 
@@ -806,7 +818,7 @@
       <footer class="pt-9 bg-main">
         <div class="container">
           <div class="flex flex-col justify-center items-center gap-y-6">
-            <img src="./images/Logo.svg" alt="" />
+            <img src="./images/Logo.svg" alt="image" />
             <div>
               <p class="text-white-800 text-center">
                 Первый открытый протокол беспроводной сети передачи данных,
@@ -821,10 +833,12 @@
           </div>
         </div>
         <div class="footer-bottom py-4 mt-10">
-          <div class="container flex justify-between items-center text-normal">
+          <div class="container flex flex-col md:flex-row gap-5 md:gap-0 justify-between items-center text-normal">
             <h6>© One Net LLC. All rights reserved.</h6>
-            <div>
-              <img src="./images/UicGroup.svg" alt="" width="40px" />
+            <div class="cursor-pointer">
+              <a href="#">
+                <img src="./images/footer.svg" alt="image" width="40px" />
+              </a>
             </div>
             <p>Правила пользования</p>
           </div>
