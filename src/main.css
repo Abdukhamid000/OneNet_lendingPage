@@ -77,13 +77,30 @@
 
   .btn {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      #ff3e2d;
+      #d72515;
     padding: 10px 92px;
     border-radius: 10px;
+    transition: 0.3s ease;
   }
 
-  .btn:hover {
+  /* .btn:hover {
     opacity: 0.9;
+  } */
+
+  .btn:hover.btn--state-active {
+    background-color: #ff3e2d;
+  }
+
+  .price:hover.price--state-active {
+    background: #161a1f;
+    border: 1px solid rgba(255, 62, 45, 0.24);
+    box-shadow: 0px 8px 44px rgba(255, 62, 45, 0.16);
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .price:hover .btn {
+    background-color: #ff3e2d;
   }
 
   .swiper-button-prev {

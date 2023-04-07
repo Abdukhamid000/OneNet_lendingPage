@@ -54,7 +54,7 @@
               <span>Ру</span>
             </div>
           </button>
-          <button class="btn px-8">
+          <button class="btn px-8 btn--state-active">
             <a href="#">Личный кабинет</a>
           </button>
           <button class="btn bg-[#4318BE] p-[6px]">
@@ -75,7 +75,7 @@
               Доступного интернета!
             </h1>
             <p class="text-sm text-normal mt-5 mb-6">О компании</p>
-            <button class="btn">
+            <button class="btn btn--state-active">
               <a href="#">Подробнее</a>
             </button>
           </div>
@@ -98,19 +98,19 @@
             class="categories p-4 grid grid-cols-1 lg:grid-cols-3 justify-center gap-6"
           >
             <div
-              class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-4"
+              class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-4 border border-dark"
             >
               <img src="./images/Cloud.svg" alt="image" />
               <h3 class="heading-lg text-normal">Облачные услуги</h3>
             </div>
             <div
-              class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-5"
+              class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-5 border border-dark"
             >
               <img src="./images/Cloud.svg" alt="image" />
               <h3 class="heading-lg text-normal">Интернет</h3>
             </div>
             <div
-              class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-4"
+              class="py-5 px-[50px] flex flex-col justify-center items-center gap-y-4 border border-dark"
             >
               <img src="./images/Cloud.svg" alt="image" />
               <h3 class="heading-lg text-normal">Телекоммуникация</h3>
@@ -122,9 +122,7 @@
           Популярные тарифы
         </h2>
         <div class="container grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div
-            class="bg-main p-5 price cursor-pointer transition duration-300 hover:bg-white-100"
-          >
+          <div class="bg-main p-5 price price--state-active">
             <p class="text-fireColor text-sm mb-2">Премиум</p>
             <span class="text-normal font-extrabold text-[36px]">
               149 900
@@ -164,10 +162,16 @@
               <a href="#">Начать</a>
             </button>
           </div>
-          <div class="bg-main p-5 price">
-            <p class="text-fireColor text-sm mb-2">Премиум</p>
+          <div class="bg-main p-5 price price--state-active">
+            <div class="flex justify-between items-center">
+              <p class="text-fireColor text-sm mb-2">Премиум</p>
+              <span
+                class="bg-[#2E262B] rounded-3xl py-1 px-3 text-normal font-medium text-sm leading-5"
+                >🔥 Самый популярный</span
+              >
+            </div>
             <span class="text-normal font-extrabold text-[36px]">
-              149 900
+              240 000
               <sub class="text-sm text-white-600 font-medium">сум / месяц</sub>
             </span>
             <h5 class="heading-md text-fireColor py-6">Business Royal</h5>
@@ -204,7 +208,7 @@
               <a href="#">Начать</a>
             </button>
           </div>
-          <div class="bg-main p-5 price">
+          <div class="bg-main p-5 price price--state-active">
             <p class="text-fireColor text-sm mb-2">Премиум</p>
             <span class="text-normal font-extrabold text-[36px]">
               149 900
@@ -249,7 +253,7 @@
           class="container grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center gap-6 mt-[112px]"
         >
           <div
-            class="flex flex-col justify-center items-center p-5 prirority bg-main gap-y-6"
+            class="flex flex-col justify-center items-center p-5 prirority transition bg-main gap-y-6 hover:shadow-2xl text-center"
           >
             <img src="./images/Thuder.svg" alt="image" />
             <h4 class="heading-lg text-[20px] text-normal">
@@ -257,7 +261,7 @@
             </h4>
           </div>
           <div
-            class="flex flex-col justify-center items-center p-5 prirority gap-y-6 prirority bg-main"
+            class="flex flex-col justify-center items-center p-5 prirority gap-y-6 prirority transition bg-main hover:shadow-2xl text-center"
           >
             <img src="./images/Thuder.svg" alt="image" />
             <h4 class="heading-lg text-[20px] text-normal">
@@ -265,7 +269,7 @@
             </h4>
           </div>
           <div
-            class="flex flex-col justify-center items-center p-5 prirority gap-y-6 prirority bg-main"
+            class="flex flex-col justify-center items-center p-5 prirority gap-y-6 prirority transition bg-main hover:shadow-2xl text-center"
           >
             <img src="./images/Thuder.svg" alt="image" />
             <h4 class="heading-lg text-[20px] text-normal">
@@ -273,7 +277,7 @@
             </h4>
           </div>
           <div
-            class="flex flex-col justify-center items-center p-5 prirority gap-y-6 bg-main"
+            class="flex flex-col justify-center items-center p-5 prirority gap-y-6 bg-main transition hover:shadow-2xl text-center"
           >
             <img src="./images/Thuder.svg" alt="image" />
             <h4 class="heading-lg text-[20px] text-normal">
@@ -290,29 +294,32 @@
             <div class="md:col-span-4">
               <div class="flex flex-col w-full">
                 <div class="flex flex-col gap-y-5 text-md">
-                  <label class="flex flex-col text-normal gap-y-2">
+                  <label class="flex flex-col text-normal gap-y-2 ">
                     Имя
-                    <input type="text" placeholder="Введите свое имя" />
+                    <input class="border transition duration-300 border-dark hover:border-normal" type="text" placeholder="Введите свое имя" />
                   </label>
                   <label class="flex flex-col text-normal gap-y-2">
                     Номер телефона
-                    <input type="text" placeholder="Введите свое имя" />
+                    <input class="border transition duration-300 border-dark hover:border-normal" type="text" placeholder="Введите свое имя" />
                   </label>
                 </div>
                 <div></div>
               </div>
             </div>
 
-            <div class="col-span-8 text-md">
+            <div class="col-span-8 text-md hover">
               <label class="flex flex-col text-normal gap-y-2">
                 Введите текст
                 <textarea
+                  class="border transition duration-300 border-dark hover:border-normal"
                   rows="5"
                   placeholder="Введите текст заявки"
                 ></textarea>
               </label>
               <div class="text-right">
-                <button class="btn text-normal mt-6">Отправить заявку</button>
+                <button class="btn text-normal mt-6 btn--state-active">
+                  Отправить заявку
+                </button>
               </div>
             </div>
           </div>
@@ -454,7 +461,7 @@
       <section id="partners" class="py-12 bg-main">
         <div class="container">
           <div class="flex justify-between swiper-wrapper">
-            <h1 class="text-normal md:heading-xl">Партнёры</h1>
+            <h1 class="text-normal text-[40px] font-bold">Партнёры</h1>
             <div class="w-[72px] flex justify-between items-center">
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next bg-no-repeat"></div>
@@ -526,7 +533,7 @@
                     <div
                       x-ref="tab"
                       :style="handleToggle()"
-                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      class="overflow-hidden max-h-0 duration-500 transition-all"
                     >
                       <p class="p-3 text-gray-900">
                         Shipping time is set by our delivery partners, according
@@ -562,7 +569,7 @@
                       </svg>
                     </h2>
                     <div
-                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      class="overflow-hidden max-h-0 duration-500 transition-all"
                       x-ref="tab"
                       :style="handleToggle()"
                     >
@@ -600,7 +607,7 @@
                       </svg>
                     </h2>
                     <div
-                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      class="overflow-hidden max-h-0 duration-500 transition-all"
                       x-ref="tab"
                       :style="handleToggle()"
                     >
@@ -639,7 +646,7 @@
                       </svg>
                     </h2>
                     <div
-                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      class="overflow-hidden max-h-0 duration-500 transition-all"
                       x-ref="tab"
                       :style="handleToggle()"
                     >
@@ -684,7 +691,7 @@
                     <div
                       x-ref="tab"
                       :style="handleToggle()"
-                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      class="overflow-hidden max-h-0 duration-500 transition-all"
                     >
                       <p class="p-3 text-gray-900">
                         Shipping time is set by our delivery partners, according
@@ -720,7 +727,7 @@
                       </svg>
                     </h2>
                     <div
-                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      class="overflow-hidden max-h-0 duration-500 transition-all"
                       x-ref="tab"
                       :style="handleToggle()"
                     >
@@ -758,7 +765,7 @@
                       </svg>
                     </h2>
                     <div
-                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      class="overflow-hidden max-h-0 duration-500 transition-all"
                       x-ref="tab"
                       :style="handleToggle()"
                     >
@@ -797,7 +804,7 @@
                       </svg>
                     </h2>
                     <div
-                      class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                      class=" overflow-hidden max-h-0 duration-500 transition-all"
                       x-ref="tab"
                       :style="handleToggle()"
                     >
@@ -833,7 +840,9 @@
           </div>
         </div>
         <div class="footer-bottom py-4 mt-10">
-          <div class="container flex flex-col md:flex-row gap-5 md:gap-0 justify-between items-center text-normal">
+          <div
+            class="container flex flex-col md:flex-row gap-5 md:gap-0 justify-between items-center text-normal"
+          >
             <h6>© One Net LLC. All rights reserved.</h6>
             <div class="cursor-pointer">
               <a href="#">
